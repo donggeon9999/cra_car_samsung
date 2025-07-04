@@ -149,7 +149,7 @@ class Sedan : public Car {
 public:
 
     Sedan() {
-        printf("Â÷·® Å¸ÀÔÀ¸·Î SedanÀ» ¼±ÅÃÇÏ¼Ì½À´Ï´Ù.\n");
+        printf("ì°¨ëŸ‰ íƒ€ìž…ìœ¼ë¡œ Sedanì„ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤.\n");
         this->setType(SEDAN);
     }
 
@@ -174,14 +174,14 @@ public:
 
         if (this->isValid() == false)
         {
-            printf("ÀÚµ¿Â÷°¡ µ¿ÀÛµÇÁö ¾Ê½À´Ï´Ù\n");
+            printf("ìžë™ì°¨ê°€ ë™ìž‘ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤\n");
         }
         else
         {
             if (engine == 4)
             {
-                printf("¿£ÁøÀÌ °íÀå³ªÀÖ½À´Ï´Ù.\n");
-                printf("ÀÚµ¿Â÷°¡ ¿òÁ÷ÀÌÁö ¾Ê½À´Ï´Ù.\n");
+                printf("ì—”ì§„ì´ ê³ ìž¥ë‚˜ìžˆìŠµë‹ˆë‹¤.\n");
+                printf("ìžë™ì°¨ê°€ ì›€ì§ì´ì§€ ì•ŠìŠµë‹ˆë‹¤.\n");
             }
             else
             {
@@ -204,7 +204,7 @@ public:
                 if (steering == 2)
                     printf("SteeringSystem : Mobis\n");
 
-                printf("ÀÚµ¿Â÷°¡ µ¿ÀÛµË´Ï´Ù.\n");
+                printf("ìžë™ì°¨ê°€ ë™ìž‘ë©ë‹ˆë‹¤.\n");
             }
         }
     }
@@ -219,12 +219,12 @@ public:
 
         if (brake == CONTINENTAL)
         {
-            printf("ÀÚµ¿Â÷ ºÎÇ° Á¶ÇÕ Å×½ºÆ® °á°ú : FAIL\n");
-            printf("Sedan¿¡´Â ContinentalÁ¦µ¿ÀåÄ¡ »ç¿ë ºÒ°¡\n");
+            printf("ìžë™ì°¨ ë¶€í’ˆ ì¡°í•© í…ŒìŠ¤íŠ¸ ê²°ê³¼ : FAIL\n");
+            printf("Sedanì—ëŠ” Continentalì œë™ìž¥ì¹˜ ì‚¬ìš© ë¶ˆê°€\n");
         }
         else
         {
-            printf("ÀÚµ¿Â÷ ºÎÇ° Á¶ÇÕ Å×½ºÆ® °á°ú : PASS\n");
+            printf("ìžë™ì°¨ ë¶€í’ˆ ì¡°í•© í…ŒìŠ¤íŠ¸ ê²°ê³¼ : PASS\n");
         }
     }
 };
@@ -233,7 +233,7 @@ class Suv : public Car {
 public:
 
     Suv() {
-        printf("Â÷·® Å¸ÀÔÀ¸·Î SUVÀ» ¼±ÅÃÇÏ¼Ì½À´Ï´Ù.\n");
+        printf("ì°¨ëŸ‰ íƒ€ìž…ìœ¼ë¡œ SUVì„ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤.\n");
         this->setType(SUV);
     }
 
@@ -260,14 +260,14 @@ public:
 
         if (this->isValid() == false)
         {
-            printf("ÀÚµ¿Â÷°¡ µ¿ÀÛµÇÁö ¾Ê½À´Ï´Ù\n");
+            printf("ìžë™ì°¨ê°€ ë™ìž‘ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤\n");
         }
         else
         {
             if (engine == 4)
             {
-                printf("¿£ÁøÀÌ °íÀå³ªÀÖ½À´Ï´Ù.\n");
-                printf("ÀÚµ¿Â÷°¡ ¿òÁ÷ÀÌÁö ¾Ê½À´Ï´Ù.\n");
+                printf("ì—”ì§„ì´ ê³ ìž¥ë‚˜ìžˆìŠµë‹ˆë‹¤.\n");
+                printf("ìžë™ì°¨ê°€ ì›€ì§ì´ì§€ ì•ŠìŠµë‹ˆë‹¤.\n");
             }
             else
             {
@@ -290,7 +290,7 @@ public:
                 if (steering == 2)
                     printf("SteeringSystem : Mobis\n");
 
-                printf("ÀÚµ¿Â÷°¡ µ¿ÀÛµË´Ï´Ù.\n");
+                printf("ìžë™ì°¨ê°€ ë™ìž‘ë©ë‹ˆë‹¤.\n");
             }
         }
     }
@@ -304,17 +304,17 @@ public:
 
         if (engine == TOYOTA)
         {
-            printf("ÀÚµ¿Â÷ ºÎÇ° Á¶ÇÕ Å×½ºÆ® °á°ú : FAIL\n");
-            printf("SUV¿¡´Â TOYOTA¿£Áø »ç¿ë ºÒ°¡\n");
+            printf("ìžë™ì°¨ ë¶€í’ˆ ì¡°í•© í…ŒìŠ¤íŠ¸ ê²°ê³¼ : FAIL\n");
+            printf("SUVì—ëŠ” TOYOTAì—”ì§„ ì‚¬ìš© ë¶ˆê°€\n");
         }
         else if (brake == BOSCH_B && steering != BOSCH_S)
         {
-            printf("ÀÚµ¿Â÷ ºÎÇ° Á¶ÇÕ Å×½ºÆ® °á°ú : FAIL\n");
-            printf("BoschÁ¦µ¿ÀåÄ¡¿¡´Â BoschÁ¶ÇâÀåÄ¡ ÀÌ¿Ü »ç¿ë ºÒ°¡\n");
+            printf("ìžë™ì°¨ ë¶€í’ˆ ì¡°í•© í…ŒìŠ¤íŠ¸ ê²°ê³¼ : FAIL\n");
+            printf("Boschì œë™ìž¥ì¹˜ì—ëŠ” Boschì¡°í–¥ìž¥ì¹˜ ì´ì™¸ ì‚¬ìš© ë¶ˆê°€\n");
         }
         else
         {
-            printf("ÀÚµ¿Â÷ ºÎÇ° Á¶ÇÕ Å×½ºÆ® °á°ú : PASS\n");
+            printf("ìžë™ì°¨ ë¶€í’ˆ ì¡°í•© í…ŒìŠ¤íŠ¸ ê²°ê³¼ : PASS\n");
         }
     }
     /* void call() override {
@@ -327,7 +327,7 @@ class Truck : public Car {
 public:
 
     Truck() {
-        printf("Â÷·® Å¸ÀÔÀ¸·Î TruckÀ» ¼±ÅÃÇÏ¼Ì½À´Ï´Ù.\n");
+        printf("ì°¨ëŸ‰ íƒ€ìž…ìœ¼ë¡œ Truckì„ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤.\n");
         this->setType(TRUCK);
     }
     bool isValid()
@@ -367,14 +367,14 @@ public:
 
         if (this->isValid() == false)
         {
-            printf("ÀÚµ¿Â÷°¡ µ¿ÀÛµÇÁö ¾Ê½À´Ï´Ù\n");
+            printf("ìžë™ì°¨ê°€ ë™ìž‘ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤\n");
         }
         else
         {
             if (engine == 4)
             {
-                printf("¿£ÁøÀÌ °íÀå³ªÀÖ½À´Ï´Ù.\n");
-                printf("ÀÚµ¿Â÷°¡ ¿òÁ÷ÀÌÁö ¾Ê½À´Ï´Ù.\n");
+                printf("ì—”ì§„ì´ ê³ ìž¥ë‚˜ìžˆìŠµë‹ˆë‹¤.\n");
+                printf("ìžë™ì°¨ê°€ ì›€ì§ì´ì§€ ì•ŠìŠµë‹ˆë‹¤.\n");
             }
             else
             {
@@ -397,7 +397,7 @@ public:
                 if (steering == 2)
                     printf("SteeringSystem : Mobis\n");
 
-                printf("ÀÚµ¿Â÷°¡ µ¿ÀÛµË´Ï´Ù.\n");
+                printf("ìžë™ì°¨ê°€ ë™ìž‘ë©ë‹ˆë‹¤.\n");
             }
         }
     }
@@ -412,22 +412,22 @@ public:
 
         if (engine == WIA)
         {
-            printf("ÀÚµ¿Â÷ ºÎÇ° Á¶ÇÕ Å×½ºÆ® °á°ú : FAIL\n");
-            printf("Truck¿¡´Â WIA¿£Áø »ç¿ë ºÒ°¡\n");
+            printf("ìžë™ì°¨ ë¶€í’ˆ ì¡°í•© í…ŒìŠ¤íŠ¸ ê²°ê³¼ : FAIL\n");
+            printf("Truckì—ëŠ” WIAì—”ì§„ ì‚¬ìš© ë¶ˆê°€\n");
         }
         else if (brake == MANDO)
         {
-            printf("ÀÚµ¿Â÷ ºÎÇ° Á¶ÇÕ Å×½ºÆ® °á°ú : FAIL\n");
-            printf("Truck¿¡´Â MandoÁ¦µ¿ÀåÄ¡ »ç¿ë ºÒ°¡\n");
+            printf("ìžë™ì°¨ ë¶€í’ˆ ì¡°í•© í…ŒìŠ¤íŠ¸ ê²°ê³¼ : FAIL\n");
+            printf("Truckì—ëŠ” Mandoì œë™ìž¥ì¹˜ ì‚¬ìš© ë¶ˆê°€\n");
         }
         else if (brake == BOSCH_B && steering != BOSCH_S)
         {
-            printf("ÀÚµ¿Â÷ ºÎÇ° Á¶ÇÕ Å×½ºÆ® °á°ú : FAIL\n");
-            printf("BoschÁ¦µ¿ÀåÄ¡¿¡´Â BoschÁ¶ÇâÀåÄ¡ ÀÌ¿Ü »ç¿ë ºÒ°¡\n");
+            printf("ìžë™ì°¨ ë¶€í’ˆ ì¡°í•© í…ŒìŠ¤íŠ¸ ê²°ê³¼ : FAIL\n");
+            printf("Boschì œë™ìž¥ì¹˜ì—ëŠ” Boschì¡°í–¥ìž¥ì¹˜ ì´ì™¸ ì‚¬ìš© ë¶ˆê°€\n");
         }
         else
         {
-            printf("ÀÚµ¿Â÷ ºÎÇ° Á¶ÇÕ Å×½ºÆ® °á°ú : PASS\n");
+            printf("ìžë™ì°¨ ë¶€í’ˆ ì¡°í•© í…ŒìŠ¤íŠ¸ ê²°ê³¼ : PASS\n");
         }
     }
 };
