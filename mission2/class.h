@@ -13,7 +13,6 @@
 using namespace std;
 
 
-int stack[10];
 
 void selectCarType(int answer);
 void selectEngine(int answer);
@@ -225,7 +224,7 @@ public:
             printf("자동차 부품 조합 테스트 결과 : FAIL\n");
             printf("Sedan에는 Continental제동장치 사용 불가\n");
         }
-        if (stack[brakeSystem_Q] == BOSCH_B && stack[SteeringSystem_Q] != BOSCH_S)
+        if (type == BOSCH_B && steering != BOSCH_S)
         {
             return false;
         }
