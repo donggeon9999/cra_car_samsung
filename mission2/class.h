@@ -139,7 +139,6 @@ public:
         return;
     }
 
-    virtual bool isValid() { return true; }
     virtual void run() {}
     virtual void test() {}
 
@@ -156,6 +155,10 @@ public:
     bool isValid()
     {
         if (this->carBrake->getManufact() == CONTINENTAL)
+        {
+            return false;
+        }
+        if (stack[brakeSystem_Q] == BOSCH_B && stack[SteeringSystem_Q] != BOSCH_S)
         {
             return false;
         }
@@ -222,6 +225,10 @@ public:
             printf("자동차 부품 조합 테스트 결과 : FAIL\n");
             printf("Sedan에는 Continental제동장치 사용 불가\n");
         }
+        if (stack[brakeSystem_Q] == BOSCH_B && stack[SteeringSystem_Q] != BOSCH_S)
+        {
+            return false;
+        }
         else
         {
             printf("자동차 부품 조합 테스트 결과 : PASS\n");
@@ -243,7 +250,10 @@ public:
         {
             return false;
         }
-        
+        if (stack[brakeSystem_Q] == BOSCH_B && stack[SteeringSystem_Q] != BOSCH_S)
+        {
+            return false;
+        }
         return true;
        
     }
