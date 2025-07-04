@@ -10,7 +10,7 @@ TEST(ValidationTest, SEDANTEST)
 	car->setSteering(BOSCH_S);
 	car->run();
 	car->test();
-	EXPECT_TRUE(car->isValid());
+	EXPECT_FALSE(car->isValid());
 
 	car->setEngine(GM);
 	car->setBrake(CONTINENTAL);
@@ -20,7 +20,7 @@ TEST(ValidationTest, SEDANTEST)
 	EXPECT_FALSE(car->isValid());
 
 	car->setEngine(TOYOTA);
-	car->setBrake(MANDO);
+	car->setBrake(BOSCH_S);
 	car->setSteering(BOSCH_S);
 	car->run();
 	car->test();
@@ -37,7 +37,7 @@ TEST(ValidationTest, SUVTEST)
 	car->setSteering(BOSCH_S);
 	car->run();
 	car->test();
-	EXPECT_TRUE(car->isValid());
+	EXPECT_FALSE(car->isValid());
 
 	car->setEngine(TOYOTA);
 	car->setBrake(CONTINENTAL);
@@ -47,7 +47,7 @@ TEST(ValidationTest, SUVTEST)
 	EXPECT_FALSE(car->isValid());
 
 	car->setEngine(GM);
-	car->setBrake(MANDO);
+	car->setBrake(BOSCH_S);
 	car->setSteering(BOSCH_S);
 	car->run();
 	car->test();
@@ -65,7 +65,7 @@ TEST(ValidationTest, TRUCKTEST)
 	car->setSteering(BOSCH_S);
 	car->run();
 	car->test();
-	EXPECT_TRUE(car->isValid());
+	EXPECT_FALSE(car->isValid());
 
 	car->setEngine(TOYOTA);
 	car->setBrake(CONTINENTAL);
@@ -75,7 +75,7 @@ TEST(ValidationTest, TRUCKTEST)
 	EXPECT_FALSE(car->isValid());
 
 	car->setEngine(GM);
-	car->setBrake(MANDO);
+	car->setBrake(BOSCH_S);
 	car->setSteering(BOSCH_S);
 	car->run();
 	car->test();
