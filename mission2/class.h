@@ -158,7 +158,7 @@ public:
         {
             return false;
         }
-        if (stack[brakeSystem_Q] == BOSCH_B && stack[SteeringSystem_Q] != BOSCH_S)
+        if (type == BOSCH_B && steering != BOSCH_S)
         {
             return false;
         }
@@ -250,7 +250,7 @@ public:
         {
             return false;
         }
-        if (stack[brakeSystem_Q] == BOSCH_B && stack[SteeringSystem_Q] != BOSCH_S)
+        if (type == BOSCH_B && steering != BOSCH_S)
         {
             return false;
         }
